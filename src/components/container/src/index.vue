@@ -1,11 +1,7 @@
 <template>
   <el-container>
-    <el-header>
-      <!--v-model: 用update,emit子组件可修改父组件值 -->
-      <nav-header v-model:collapse="isCollapse"></nav-header>
-    </el-header>
     <el-container>
-      <el-aside width="auto">
+      <el-aside width="200">
         <nav-side :collapse="isCollapse"></nav-side>
       </el-aside>
       <el-main>

@@ -17,7 +17,31 @@ const routes: RouteRecordRaw[] = [
                 component: ()=>import("../views/bar/bar1.vue"),
             }
         ]
-    }
+    },
+    {
+        name: 'line',
+        path: '/line',
+        component: Container,
+        children: [
+            {
+                name: "line1",
+                path: "/line1",
+                component: ()=>import("../views/line/line1.vue"),
+            }
+        ]
+    },
+    {
+        name: 'pie',
+        path: '/pie',
+        component: Container,
+        children: [
+            {
+                name: "pie1",
+                path: "/pie1",
+                component: ()=>import("../views/pie/index.vue"),
+            }
+        ]
+    },
 ]
 
 
